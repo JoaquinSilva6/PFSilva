@@ -1,0 +1,369 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(153, 142, 142);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** --------HEADER---------**/
+.bg-body-tertiary {
+    background-color: rgba(0, 0, 0, 0) !important ;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+header nav div a img {
+    width: 220px;
+    height: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    width: 600px;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+header nav div div ul li {
+    background-color: rgb(206, 191, 191);
+    margin: 10px;
+    box-sizing: content-box;
+    border: solid #000000 5px;
+    padding: 5px;
+    text-align: center;
+    border-style: groove;
+    align-self: center;
+}
+
+header nav ul li:hover {
+    border: solid white 5px;
+    border-style: groove;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/**                                                         INDEX                                                 **/
+/**-------------- MAIN-------------**/
+
+/** -------------Sec1--------------**/
+.carousel {
+    justify-content: center;
+}
+.carousel-caption p {
+    background-color: #00000000;
+    color: aliceblue;
+    text-shadow: 3px 4px 4px #000000;
+    font-weight: 600;
+    font-size: 25px;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+}
+.carousel-caption h5{
+    background-color: rgb(112, 128, 144);
+    color: aliceblue;
+    border-radius: 5px;
+    text-shadow: 3px 4px 4px #000000;
+    font-size: 40px;
+    font-weight: 400;
+}
+.carousel-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.carousel-indicators{
+    background-color: #00000000;
+}
+.carousel-caption{
+    background-color: #00000000;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    
+}
+
+
+.carousel-item img{
+    position: relative;
+    margin: 20px 20px 20px 20px !important;
+    width: 80% !important;
+    height: 100vh !important;
+    border-radius: 30px;
+    box-shadow: 12px 10px 10px rgba(48, 47, 47, 0.619), -12px -10px 10px rgb(48, 47, 47, 0.619), -12px 10px 10px rgb(48, 47, 47, 0.619), 12px -10px 10px rgb(48, 47, 47, 0.619);
+}
+
+/* -------------Sec2--------------*/
+.sec2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 200px 100px 400px 100px 400px;
+    grid-template-areas:
+        "titulo titulo"
+        ". subtit1"
+        "foto1 parrafo1"
+        ". subtit2"
+        "foto2 parrafo2"
+    ;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.tit1 {
+    grid-area: subtit1;
+}
+
+.tit2 {
+    grid-area: subtit2;
+}
+
+.div1 {
+    grid-area: foto1;
+}
+
+.text1 {
+    grid-area: parrafo1;
+}
+
+.div2 {
+    grid-area: foto2;
+}
+
+.text2 {
+    grid-area: parrafo2;
+}
+
+.sec2 h2 {
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
+}
+
+.sec2 h3 {
+    width: fit-content;
+    height: fit-content;
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-self: center;
+    display: flex;
+    font-size: 35px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.sec2 p {
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+    align-self: center;
+    margin-right: 50px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 div img {
+    padding: 50px;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 20px;
+
+}
+
+/** -------------Sec3--------------**/
+.barra-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6 1fr;
+    grid-template-rows: 45% 6% 45%;
+    grid-template-areas:
+        "imagen1 . imagen3 . imagen5 ."
+        "barra barra barra barra barra barra"
+        ". imagen2 . imagen4 . imagen6"
+    ;
+}
+
+.im1 {
+    grid-area: imagen1;
+}
+
+.im2 {
+    grid-area: imagen2;
+}
+
+.im3 {
+    grid-area: imagen3;
+}
+
+.im4 {
+    grid-area: imagen4;
+}
+
+.im5 {
+    grid-area: imagen5;
+}
+
+.im6 {
+    grid-area: imagen6;
+}
+
+.barra {
+    grid-area: barra;
+}
+
+.sec3 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.barra-grid div img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(24, 24, 24, 0.651);
+    margin-bottom: 10px;
+}
+
+.barra-grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-grid div:not(.barra) {
+    flex-direction: column;
+}
+
+.barra-grid div h3 {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 5px;
+}
+
+.barra-grid div p {
+    background-color: #00000000;
+    text-align: center;
+    font-size: 15px;
+}
+
+.barra p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.barra-grid div input {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    display: flex;
+}
+
+.barra-grid div input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.26);
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) #ffffff;
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/**                                                    PROYECTO                                                  **/
+
+.sec1Proyecto p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sec1Proyecto h2 {
+    font-size: medium;
+}
+
+/**--------------FOOTER------------**/
+footer {
+    background-color: rgba(112, 128, 144);
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    background-color: rgb(112, 128, 144);
+}
+footer div a img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: rgba(112, 128, 144);
+    display: flex;
+}
+
+footer p {
+    color: aliceblue;
+    text-shadow: 3px 4px 4px #000000;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(112, 128, 144, 0.658);
+}
+
+/*!-             MEDIA QUERY-!*/
+@media screen and (max-width: 1260px) {
+    .hero ul div li p {
+        color: rgb(0, 136, 255);
+        font-size: 30px;
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .slider ul div li img {
+        position: static;
+    }
+
+    .slider ul div li {
+        position: static;
+        flex-direction: column;
+        height: 1050px;
+        align-items: flex-start;
+    }
+}
