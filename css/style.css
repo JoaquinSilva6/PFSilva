@@ -337,15 +337,72 @@ header nav ul li a {
 }
 
 /**                                                    PROYECTO                                                  **/
-
-.sec1Proyecto p {
+.card{
+    margin-bottom: 50px;
+}
+.card-header {
+    padding-bottom: 30px;
+    background-color:rgb(112, 128, 144) ;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 5px 5px 10px #000000;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body h5 {
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 20px ;
+    background-color: rgb(206, 191, 191);
+    border-radius: 10px;
+    width: fit-content;
+}
+.card-body p{
+    font-size: 25px;
+    font-weight: 200;
+
 }
 
-.sec1Proyecto h2 {
-    font-size: medium;
+/*             MULTIMEDIA             */
+.sec1Proyecto h2{
+    padding-bottom: 30px;
+    background-color:rgb(112, 128, 144) ;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 5px 5px 10px #000000;
+    text-align: center;
 }
+.card1{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.card1 iframe{
+    width: 70%;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000000b9;
+}
+.card1-body{
+    display: flex;
+    justify-content: center;
+}
+.card1-body p{
+    background-color: rgb(206, 191, 191);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    width: 70%;
+}
+
 
 /**--------------FOOTER------------**/
 footer {
@@ -466,6 +523,12 @@ footer p {
             " imagen2  imagen4  imagen6"
         ;
     }
+    .card-body{
+        
+    }
+    .card iframe{
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -502,7 +565,22 @@ footer p {
     }
 }
 @media screen and (max-width:770px){
-    .carousel-caption p{
-
+    .carousel-caption {
+        width: 350px;
+        top: 30%;
+    }
+    .sec2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px 50px 1500px 400px 50px 1500px;
+        grid-template-areas:
+            "titulo"
+            "foto1"
+            "subtit1"
+            "parrafo1"
+            "foto2"
+            "subtit2"
+            "parrafo2"
+        ;
     }
 }
