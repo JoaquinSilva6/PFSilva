@@ -59,9 +59,7 @@ header nav ul li a {
 .carousel{
     background-color: #00000000;
 }
-.carousel-inner{
-    
-}
+
 .carousel-caption p {
     background-color: #00000000;
     color: aliceblue;
@@ -522,9 +520,6 @@ footer p {
             "barra barra barra"
             " imagen2  imagen4  imagen6"
         ;
-    }
-    .card-body{
-        
     }
     .card iframe{
         width: auto;
