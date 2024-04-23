@@ -1,0 +1,29 @@
+header nav div a img {
+  width: 220px;
+  height: 150px; }
+
+header nav div div .navbar-collapse {
+  flex-grow: 0; }
+
+header nav div div ul {
+  list-style: none;
+  width: 600px;
+  justify-content: space-between;
+  margin-right: 50px; }
+  header nav div div ul li {
+    background-color: #cebfbf;
+    margin: 10px;
+    box-sizing: content-box;
+    border: solid #000000 5px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    border-style: groove;
+    align-self: center; }
+    header nav div div ul li:hover {
+      border: solid white 5px;
+      border-style: groove; }
+    header nav div div ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500; }
