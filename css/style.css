@@ -404,7 +404,7 @@ header nav ul li a {
 
 /**--------------FOOTER------------**/
 footer {
-    background-color: rgba(112, 128, 144);
+    background-color: rgb(112, 128, 144);
     display: flex;
     justify-content: center;
 }
@@ -417,7 +417,7 @@ footer div a img {
     height: 50px;
     width: 50px;
     display: inline-block;
-    background-color: rgba(112, 128, 144);
+    background-color: rgb(112, 128, 144);
     display: flex;
 }
 

@@ -1,0 +1,24 @@
+footer{
+    background-color: rgb(112, 128, 144);
+    display: flex;
+    justify-content: center;
+    p{
+        color: aliceblue;
+        text-shadow: 3px 4px 4px #000000;
+        text-align: center;
+        font-size: 25px;
+        background-color: rgb(112, 128, 144);
+    }
+    div{
+        background-color: rgb(112, 128, 144);
+        a{
+            img{
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+                background-color: rgb(112, 128, 144);
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+
+@media screen and (max-width: 1750px) and (min-width: 1500px) {
+
+
+    .hero div div div div {
+        font-size: 30px;
+        left: 50%;
+    }
+
+    .hero div div div div h5 {
+        left: 40%;
+    }
+
+    .hero div div div img {
+        position: static;
+    }
+
+}
+
+@media screen and ((max-width: 1500px)) {
+
+    /*        SEC 1       */
+    .hero {
+        height: 1400px;
+    }
+
+    .hero div {
+        height: 1400px;
+    }
+
+    .hero div div div {
+        height: 1400px;
+    }
+
+    .hero div div div img {
+        height: auto;
+    }
+
+    .hero div div div div  {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 65%;
+        left: -5%;
+    }
+
+    .hero div div div div  h5 {
+        top: 0%;
+    }
+
+    .hero div div div div  p {
+        width: 90%;
+        height: 400px;
+    }
+
+    /*          SEC 2             */
+    .barra-grid {
+        height: 1200px;
+    }
+
+    /*            SEC 3            */
+    .sec2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px 50px 500px 400px 50px 500px;
+        grid-template-areas:
+            "titulo"
+            "foto1"
+            "subtit1"
+            "parrafo1"
+            "foto2"
+            "subtit2"
+            "parrafo2"
+        ;
+    }
+
+    .div2 {
+        margin-bottom: 0;
+    }
+
+    .sec2 p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:1000px) {
+    .barra-grid {
+        grid-template-columns: 3fr;
+        grid-template-rows: 47% 6% 47%;
+        grid-template-areas:
+            "imagen1  imagen3  imagen5 "
+            "barra barra barra"
+            " imagen2  imagen4  imagen6"
+        ;
+    }
+
+    .card iframe {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .carousel {
+        height: auto;
+    }
+
+    .carousel-item img {
+        height: auto;
+    }
+
+    .carousel-caption p {
+        font-size: 25px;
+        top: 10%
+    }
+
+    .carousel-caption h5 {
+        top: -10%
+    }
+
+    .sec2 {
+        display: grid;
+        grid-template-rows: 200px 400px 50px 800px 400px 50px 800px;
+    }
+
+    .barra-grid {
+        grid-template-columns: 3fr;
+        grid-template-rows: 47% 6% 47%;
+        grid-template-areas:
+            "imagen1  imagen3  imagen5 "
+            "barra barra barra"
+            " imagen2  imagen4  imagen6"
+        ;
+    }
+
+    .sec2 h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .carousel-caption {
+        width: 350px;
+        top: 30%;
+    }
+
+    .sec2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px 50px 1500px 400px 50px 1500px;
+        grid-template-areas:
+            "titulo"
+            "foto1"
+            "subtit1"
+            "parrafo1"
+            "foto2"
+            "subtit2"
+            "parrafo2"
+        ;
+    }
+}

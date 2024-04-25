@@ -1,0 +1,42 @@
+* {
+    background-color: rgb(153, 142, 142);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg-body-tertiary {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.carousel {
+    background-color: #00000000;
+}
+
+.carousel-indicators {
+    background-color: #00000000;
+}
+
+.carousel-control-next-icon {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+/*           VARIABLES                 */
+
+$colores: rgb(112, 128, 144), rgb(206, 191, 191), white;
+

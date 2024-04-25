@@ -1,9 +1,36 @@
+* {
+  background-color: #998e8e;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.bg-body-tertiary {
+  background-color: rgba(0, 0, 0, 0) !important; }
+
+.navbar-collapse {
+  flex-grow: 0; }
+
+.carousel {
+  background-color: #00000000; }
+
+.carousel-indicators {
+  background-color: #00000000; }
+
+.carousel-control-next-icon {
+  background-color: #000000;
+  border-radius: 5px; }
+
+.carousel-control-prev-icon {
+  background-color: #000000;
+  border-radius: 5px; }
+
+/*           VARIABLES                 */
 header nav div a img {
   width: 220px;
   height: 150px; }
-
-header nav div div .navbar-collapse {
-  flex-grow: 0; }
 
 header nav div div ul {
   list-style: none;
@@ -27,3 +54,278 @@ header nav div div ul {
       text-decoration: none;
       color: black;
       font-weight: 500; }
+
+/*           seccion 1              */
+.hero div div div {
+  position: relative; }
+  .hero div div div img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+    box-shadow: 12px 10px 10px rgba(48, 47, 47, 0.619), -12px -10px 10px rgba(48, 47, 47, 0.619), -12px 10px 10px rgba(48, 47, 47, 0.619), 12px -10px 10px rgba(48, 47, 47, 0.619); }
+  .hero div div div div {
+    background-color: #00000000;
+    position: absolute;
+    top: 10%;
+    left: 58%; }
+    .hero div div div div h5 {
+      width: fit-content;
+      padding: 0px 10px 5px 10px;
+      background-color: slategray;
+      color: aliceblue;
+      border-radius: 5px;
+      text-shadow: 3px 4px 4px #000000;
+      font-size: 45px;
+      font-weight: 400;
+      position: absolute;
+      left: 50%; }
+    .hero div div div div p {
+      background-color: #00000000;
+      color: aliceblue;
+      text-shadow: 3px 4px 4px #000000;
+      font-weight: 600;
+      font-size: 30px;
+      width: 650px;
+      height: 600px;
+      position: absolute;
+      top: 10%;
+      left: 10%; }
+
+/*            seccion 2                  */
+.sec3 h2 {
+  font-size: 50px;
+  text-align: center; }
+
+.sec3 section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 6fr;
+  grid-template-rows: 47% 6% 47%;
+  grid-template-areas: "imagen1 . imagen3 . imagen5 ." "barra barra barra barra barra barra" ". imagen2 . imagen4 . imagen6"; }
+  .sec3 section .im1 {
+    grid-area: imagen1; }
+  .sec3 section .im2 {
+    grid-area: imagen2; }
+  .sec3 section .im3 {
+    grid-area: imagen3; }
+  .sec3 section .im4 {
+    grid-area: imagen4; }
+  .sec3 section .im5 {
+    grid-area: imagen5; }
+  .sec3 section .im6 {
+    grid-area: imagen6; }
+  .sec3 section .barra {
+    grid-area: barra; }
+  .sec3 section div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sec3 section div:not(.barra) {
+      flex-direction: column; }
+    .sec3 section div h3 {
+      border-radius: 20px;
+      background-color: #ffffff;
+      padding: 0px 5px 0px 5px;
+      margin-bottom: 5px;
+      text-align: center; }
+    .sec3 section div img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 10px 10px 10px rgba(24, 24, 24, 0.651);
+      margin-bottom: 10px; }
+    .sec3 section div p {
+      background-color: #00000000;
+      text-align: center;
+      font-size: 15px; }
+  .sec3 section .barra p {
+    font-weight: 300;
+    font-size: 20px; }
+  .sec3 section .barra input {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    display: flex; }
+    .sec3 section .barra input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #ffffff;
+      cursor: pointer;
+      box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.26);
+      background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) #ffffff;
+      background-size: 45%;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+/*                 seccion 3               */
+.sec2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 300px 100px 400px 100px 400px;
+  grid-template-areas: "titulo titulo" ". subtit1" "foto1 parrafo1" ". subtit2" "foto2 parrafo2";
+  padding-bottom: 30px; }
+  .sec2 .titulo {
+    grid-area: titulo; }
+  .sec2 .tit1 {
+    grid-area: subtit1; }
+  .sec2 .tit2 {
+    grid-area: subtit2; }
+  .sec2 .div1 {
+    grid-area: foto1; }
+  .sec2 .text1 {
+    grid-area: parrafo1; }
+  .sec2 .div2 {
+    grid-area: foto2; }
+  .sec2 .text2 {
+    grid-area: parrafo2; }
+  .sec2 h2 {
+    width: fit-content;
+    background-color: slategray;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 50px; }
+  .sec2 h3 {
+    width: fit-content;
+    height: fit-content;
+    background-color: #cebfbf;
+    border-radius: 20px;
+    justify-self: center;
+    display: flex;
+    font-size: 35px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px; }
+  .sec2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sec2 div img {
+      padding: 50px;
+      width: 400px;
+      height: auto;
+      border-radius: 50%;
+      background-color: slategray;
+      padding: 20px; }
+  .sec2 p {
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+    align-self: center;
+    margin-right: 50px; }
+
+footer {
+  background-color: slategray;
+  display: flex;
+  justify-content: center; }
+  footer p {
+    color: aliceblue;
+    text-shadow: 3px 4px 4px #000000;
+    text-align: center;
+    font-size: 25px;
+    background-color: slategray; }
+  footer div {
+    background-color: slategray; }
+    footer div a img {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      background-color: slategray;
+      display: flex; }
+
+@media screen and (max-width: 1750px) and (min-width: 1500px) {
+  .hero div div div div {
+    font-size: 30px;
+    left: 50%; }
+  .hero div div div div h5 {
+    left: 40%; }
+  .hero div div div img {
+    position: static; } }
+
+@media screen and ((max-width: 1500px)) {
+  /*        SEC 1       */
+  .hero {
+    height: 1400px; }
+  .hero div {
+    height: 1400px; }
+  .hero div div div {
+    height: 1400px; }
+  .hero div div div img {
+    height: auto; }
+  .hero div div div div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    left: -5%; }
+  .hero div div div div h5 {
+    top: 0%; }
+  .hero div div div div p {
+    width: 90%;
+    height: 400px; }
+  /*          SEC 2             */
+  .barra-grid {
+    height: 1200px; }
+  /*            SEC 3            */
+  .sec2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 50px 500px 400px 50px 500px;
+    grid-template-areas: "titulo" "foto1" "subtit1" "parrafo1" "foto2" "subtit2" "parrafo2"; }
+  .div2 {
+    margin-bottom: 0; }
+  .sec2 p {
+    text-align: center; } }
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .barra-grid {
+    grid-template-columns: 3fr;
+    grid-template-rows: 47% 6% 47%;
+    grid-template-areas: "imagen1  imagen3  imagen5 " "barra barra barra" " imagen2  imagen4  imagen6"; }
+  .card iframe {
+    width: auto; } }
+
+@media screen and (max-width: 1000px) {
+  .carousel {
+    height: auto; }
+  .carousel-item img {
+    height: auto; }
+  .carousel-caption p {
+    font-size: 25px;
+    top: 10%; }
+  .carousel-caption h5 {
+    top: -10%; }
+  .sec2 {
+    display: grid;
+    grid-template-rows: 200px 400px 50px 800px 400px 50px 800px; }
+  .barra-grid {
+    grid-template-columns: 3fr;
+    grid-template-rows: 47% 6% 47%;
+    grid-template-areas: "imagen1  imagen3  imagen5 " "barra barra barra" " imagen2  imagen4  imagen6"; }
+  .sec2 h2 {
+    text-align: center; } }
+
+@media screen and (max-width: 770px) {
+  .carousel-caption {
+    width: 350px;
+    top: 30%; }
+  .sec2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 50px 1500px 400px 50px 1500px;
+    grid-template-areas: "titulo" "foto1" "subtit1" "parrafo1" "foto2" "subtit2" "parrafo2"; } }
