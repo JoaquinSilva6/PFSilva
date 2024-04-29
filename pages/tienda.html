@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>AntropoDavids / Tienda</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>AntropoDavids / Tienda</title>
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <meta name="description" content="Descubre el mundo de la antropología con análisis detallados, investigaciones recientes y perspectivas únicas sobre culturas, sociedades y la evolución humana. Encuentra contenido atractivo y accesible para entender mejor la diversidad humana y las prácticas culturales.">
+        <meta name="keywords" content="Antropología, Divulgación, Tribus, Cultura, Costumbres, Sociedades">
 </head>
 
 <body>
@@ -42,11 +45,23 @@
     </header>
 
     <main>
+        <section>
+            <div class="barraTienda">
+                <h2>Tienda de Bibliografía Relacionada</h2>
+                <button type="button" class="btn btn-primary position-relative">
+                    Inbox
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+            </div>
+        </section>
         <!--                Tarjetas de productos                  -->
         <section class="tienda">
             <div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/thedownofeverything.jpg" class="card-img-top" alt="...">
+                    <img src="../img/thedownofeverything.jpg" class="card-img-top" alt="Libro the dawn of Everything">
                     <div class="card-body">
                         <h5 class="card-title">The Dawn of Everything</h5>
                         <p class="card-text">David Graeber/ David Wengrow</p>
@@ -55,7 +70,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/homodeus.jpg" class="card-img-top" alt="...">
+                    <img src="../img/homodeus.jpg" class="card-img-top" alt="Libro Homo Deus">
                     <div class="card-body">
                         <h5 class="card-title">Homo Deus</h5>
                         <p class="card-text">Yuval Noah Harari</p>
@@ -64,7 +79,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/Debt.jpg" class="card-img-top" alt="...">
+                    <img src="../img/Debt.jpg" class="card-img-top" alt="Libro Debt: The First 5000 Years">
                     <div class="card-body">
                         <h5 class="card-title">Debt: The First 5000 Years</h5>
                         <p class="card-text">David Graeber</p>
@@ -73,7 +88,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/sapiens.png" class="card-img-top" alt="...">
+                    <img src="../img/sapiens.png" class="card-img-top" alt="Libro Sapiens">
                     <div class="card-body">
                         <h5 class="card-title">Sapiens</h5>
                         <p class="card-text">Yuval Noah Harari</p>
@@ -82,7 +97,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/justiciaIndigena.jpg" class="card-img-top" alt="...">
+                    <img src="../img/justiciaIndigena.jpg" class="card-img-top" alt="Libro Justicia Indigena">
                     <div class="card-body">
                         <h5 class="card-title">De la "vieja" a la "nueva" justicia indígena</h5>
                         <p class="card-text">Orlando Aragón Andrade</p>
@@ -91,7 +106,7 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../img/monstruo.jpg" class="card-img-top" alt="...">
+                    <img src="../img/monstruo.jpg" class="card-img-top" alt="Libro La antropología del monstruo en la cultura">
                     <div class="card-body">
                         <h5 class="card-title">Antropología del monstruo en la cultura</h5>
                         <p class="card-text">Ivan Perez</p>
@@ -99,10 +114,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--            Carrito                       -->
-        <section class="carrito">
-
         </section>
     </main>
 

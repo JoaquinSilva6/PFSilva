@@ -1,5 +1,8 @@
+/*           VARIABLES                 */
+
+$colores: rgb(153, 142, 142), rgb(112, 128, 144), rgb(206, 191, 191), rgb(224, 224, 224);
+
 * {
-    background-color: rgb(153, 142, 142);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 224, 224);
 }
 
 
@@ -17,7 +21,7 @@ body {
 .navbar-collapse {
     flex-grow: 0;
 }
-
+/*              MAIN             */
 .carousel {
     background-color: #00000000;
 }
@@ -36,7 +40,22 @@ body {
     border-radius: 5px;
 }
 
-/*           VARIABLES                 */
+/*            MAPA             */
 
-$colores: rgb(112, 128, 144), rgb(206, 191, 191), white;
+#btn1{
+    left: 27%;
+    top: 45%;
 
+}
+#btn2{
+    left: 37%;
+    top: 55%;
+}
+#btn3{
+    left: 68%;
+    top: 38%;
+}
+#btn4{
+    left: 78%;
+    top: 60%;
+}

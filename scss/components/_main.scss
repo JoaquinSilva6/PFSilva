@@ -10,7 +10,7 @@
                         width: 100%;
                         height: 100vh;
                         border-radius: 30px;
-                        box-shadow: 12px 10px 10px rgba(48, 47, 47, 0.619), -12px -10px 10px rgba(48, 47, 47, 0.619), -12px 10px 10px rgba(48, 47, 47, 0.619), 12px -10px 10px rgba(48, 47, 47, 0.619);
+                        
                 }
                 div{
                     background-color: #00000000;
@@ -48,15 +48,17 @@
 }
  /*            seccion 2                  */
 .sec3{
+    height: fit-content;
     h2{
         font-size: 50px;
         text-align: center;
+        padding-bottom: 100px;
     }
     section{
         height: 100vh;
         display: grid;
         grid-template-columns: 6fr;
-        grid-template-rows: 47% 6% 47%;
+        grid-template-rows: 60% 12% 60%;
         grid-template-areas:
             "imagen1 . imagen3 . imagen5 ."
             "barra barra barra barra barra barra"
@@ -117,16 +119,18 @@
             }
         }
         .barra{
+            justify-content:center;
             p{
                 font-weight: 300;
                 font-size: 20px;
+                text-align:center;
             }
             input{
                 -webkit-appearance: none;
-                width: 90%;
+                width:85%;
                 height: 15px;
                 border-radius: 5px;
-                background: #ffffff;
+                background: nth($colores, 2);
                 outline: none;
                 opacity: 0.7;
                 -webkit-transition: .2s;
