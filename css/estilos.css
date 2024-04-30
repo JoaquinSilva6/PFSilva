@@ -46,6 +46,13 @@ body {
   left: 78%;
   top: 60%; }
 
+/*             CONTACTOS            */
+.preguntasFrecuentes div div .card-body {
+  width: fit-content; }
+
+.infoUsuario form div .form-control {
+  width: 400px; }
+
 header {
   background: slategray;
   background: linear-gradient(180deg, slategray 32%, rgba(125, 139, 153, 0.937412) 62%, #e0e0e0 100%); }
@@ -314,6 +321,93 @@ header {
         text-align: center;
         width: 70%; }
 
+.barraTienda {
+  display: flex;
+  justify-content: space-evenly; }
+  .barraTienda h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    background-color: slategray;
+    border-radius: 10px;
+    padding-inline: 20px; }
+  .barraTienda button {
+    background-color: slategray;
+    border: none; }
+
+.tienda div {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 365px 365px;
+  grid-template-areas: "carta1 carta2 carta3" "carta4 carta5 carta6"; }
+  .tienda div .cardT1 {
+    grid-area: carta1;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT1 img {
+      height: 205px; }
+    .tienda div .cardT1 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .tienda div .cardT2 {
+    grid-area: carta2;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT2 img {
+      height: 205px; }
+    .tienda div .cardT2 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .tienda div .cardT3 {
+    grid-area: carta3;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT3 img {
+      height: 205px; }
+    .tienda div .cardT3 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .tienda div .cardT4 {
+    grid-area: carta4;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT4 img {
+      height: 205px; }
+    .tienda div .cardT4 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .tienda div .cardT5 {
+    grid-area: carta5;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT5 img {
+      height: 205px; }
+    .tienda div .cardT5 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .tienda div .cardT6 {
+    grid-area: carta6;
+    display: flex;
+    flex-direction: column; }
+    .tienda div .cardT6 img {
+      height: 205px; }
+    .tienda div .cardT6 div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+
 .mapa h2 {
   font-size: 50px;
   text-align: center;
@@ -339,6 +433,23 @@ header {
       background-color: white;
       border-color: black;
       transform: scale(1.2); }
+
+.preguntasFrecuentes h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  background-color: slategray;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding-inline: 20px; }
+
+.preguntasFrecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px; }
 
 footer {
   background-color: slategray;
