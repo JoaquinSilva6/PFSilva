@@ -2,17 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     h2{
-        color: white;
-        font-size: 30px;
-        font-weight: 400;
-        padding-bottom: 20px ;
-        background-color: rgb(112, 128, 144);
-        border-radius: 10px;
-        padding-inline: 20px;
+        @extend %titulo;
     }
     button{
         background-color: nth($colores, 2);
         border: none;
+        margin-bottom: 10px ;
     }
 }
 
@@ -20,10 +15,11 @@
     div{
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: 365px 365px;
+        grid-template-rows: 375px 10px 375px;
         grid-template-areas: 
-            "carta1 carta2 carta3"
-            "carta4 carta5 carta6"
+        "carta1 carta2 carta3"
+        ". . ."
+        "carta4 carta5 carta6"
         ;
         .cardT1{
             grid-area: carta1;
@@ -37,6 +33,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
         .cardT2{
@@ -51,6 +51,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
         .cardT3{
@@ -65,6 +69,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
         .cardT4{
@@ -79,6 +87,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
         .cardT5{
@@ -93,6 +105,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
         .cardT6{
@@ -107,6 +123,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                a{
+                    background-color: nth($colores , 2 ) !important;
+                    border-color: black;
+                }
             }
         }
     }

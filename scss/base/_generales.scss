@@ -21,6 +21,7 @@ body {
 .navbar-collapse {
     flex-grow: 0;
 }
+
 /*              MAIN             */
 .carousel {
     background-color: #00000000;
@@ -28,6 +29,7 @@ body {
 
 .carousel-indicators {
     background-color: #00000000;
+    height: 5px;
 }
 
 .carousel-control-next-icon {

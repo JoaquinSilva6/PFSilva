@@ -1,18 +1,27 @@
-.preguntasFrecuentes h2{
-    color: white;
-    font-size: 30px;
-    font-weight: 400;
-    padding-bottom: 20px ;
-    background-color: rgb(112, 128, 144);
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-    padding-inline: 20px;
-}
-
-.preguntasFrecuentes{
+.preguntasFrecuentes {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 100px;
+    h2{
+        @extend %titulo
+    }
+    p{
+        button{
+            background: nth($colores , 3 );
+            color: black;
+            border-color:black
+        }
+    }
+}
+
+.infoUsuario {
+    h3{
+        @extend %titulo;
+    }
+    form{
+        div{
+            margin-inline: 20px;
+        }
+    }
 }

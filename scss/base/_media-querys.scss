@@ -1,3 +1,8 @@
+@media screen and(max-width: 1920px) and (min-width: 1750px){
+    .hero div div div div {
+        left: 50%;
+    }
+}
 
 @media screen and (max-width: 1750px) and (min-width: 1500px) {
 
@@ -36,7 +41,7 @@
         height: auto;
     }
 
-    .hero div div div div  {
+    .hero div div div div {
         width: 100%;
         height: auto;
         position: absolute;
@@ -44,11 +49,11 @@
         left: -5%;
     }
 
-    .hero div div div div  h5 {
+    .hero div div div div h5 {
         top: -150%
     }
 
-    .hero div div div div  p {
+    .hero div div div div p {
         width: 90%;
         height: auto;
     }
@@ -57,7 +62,8 @@
     .sec3 section {
         height: 800px;
     }
-    .sec3{
+
+    .sec3 {
         height: 1200px;
     }
 
@@ -88,25 +94,29 @@
 
 @media screen and (max-width:1200px) and (min-width:1000px) {
 
-    .hero div div div div  {
+
+    /*               INDEX               */
+    .hero div div div div {
         width: 100%;
         height: auto;
         position: absolute;
         top: 100%;
         left: -5%;
     }
-    .hero div div div div  h5 {
+
+    .hero div div div div h5 {
         top: -300%
     }
 
-    .hero div div div div  p {
+    .hero div div div div p {
         width: 90%;
         height: fit-content;
     }
 
-    .sec3{
+    .sec3 {
         height: fit-content;
     }
+
     .sec3 section {
         height: 1200px;
         grid-template-columns: 47% 6% 47%;
@@ -117,43 +127,51 @@
             " imagen5  barra  imagen6"
         ;
     }
-    .sec3 section .barra input{
+
+    .sec3 section .barra input {
         position: absolute;
         writing-mode: bt-lr;
         transform: rotate(270deg);
     }
-    .sec3 section .barra :not(input){
+
+    .sec3 section .barra :not(input) {
         height: 100%;
     }
-    .sec3 section .barra .p2{
+
+    .sec3 section .barra .p2 {
         display: flex;
         align-self: flex-end;
         height: fit-content;
     }
-    .sec3 section .barra .p1{
+
+    .sec3 section .barra .p1 {
         display: flex;
         align-self: flex-start;
         height: fit-content;
     }
 
     /*               MAPA               */
-    .mapa div button{
+    .mapa div button {
         scale: 0.8;
     }
-    #btn1{
+
+    #btn1 {
         left: 27%;
         top: 43%;
-    
+
     }
-    #btn2{
+
+    #btn2 {
         left: 37%;
         top: 55%;
     }
-    #btn3{
+
+    #btn3 {
         left: 68%;
         top: 38%;
     }
-    #btn4{
+
+    #btn4 {
         left: 78%;
         top: 60%;
     }
@@ -161,8 +179,19 @@
 
 @media screen and (max-width: 1000px) {
 
+    /*               INDEX               */
+    .hero {
+        height: 1200px;
+    }
+
+    .hero div div div div {
+        width: 600px;
+        height: 600px;
+        left: 10%;
+    }
+
     .hero div {
-        height: 1000px;
+        height: 1200px;
     }
 
     .hero div div div img {
@@ -176,18 +205,18 @@
 
     .hero div div div div h5 {
         top: -20%;
-        left:40%
+        left: 40%
     }
 
     .sec2 {
         display: grid;
         grid-template-rows: 200px 400px 50px 800px 400px 50px 800px;
-        margin-top: 200px;
     }
 
-    .sec3{
-        height: fit-content;
+    .sec3 {
+        height: 1200px;
     }
+
     .sec3 section {
         height: fit-content;
         grid-template-columns: 47% 6% 47%;
@@ -198,21 +227,24 @@
             " imagen5  barra  imagen6"
         ;
     }
-    .sec3 section .barra input{
+
+    .sec3 section .barra input {
         position: absolute;
         width: 95%;
-        writing-mode: bt-lr;
         transform: rotate(270deg);
     }
-    .sec3 section .barra :not(input){
+
+    .sec3 section .barra :not(input) {
         height: 100%;
     }
-    .sec3 section .barra .p2{
+
+    .sec3 section .barra .p2 {
         display: flex;
         align-self: flex-end;
         height: fit-content;
     }
-    .sec3 section .barra .p1{
+
+    .sec3 section .barra .p1 {
         display: flex;
         align-self: flex-start;
         height: fit-content;
@@ -221,50 +253,84 @@
     .sec2 h2 {
         text-align: center;
     }
-/*           PROYECTO             */
 
-    .sec1Proyecto div iframe{
+    /*           PROYECTO             */
+
+    .sec1Proyecto div iframe {
         width: 500px;
         height: 300px;
     }
-    .sec1Proyecto div div p{
+
+    .sec1Proyecto div div p {
         font-size: 20px;
     }
-    .sec1Proyecto div div h5{
+
+    .sec1Proyecto div div h5 {
         font-size: 25px;
     }
 
-        /*               MAPA               */
-        .mapa h2{
-            font-size: 30px;
-        }
+    /*               MAPA               */
+    .mapa h2 {
+        font-size: 30px;
+    }
 
-        .mapa div img{
-            width: 100%;
-            height: 100%;
-        }
+    .mapa div img {
+        width: 100%;
+        height: 100%;
+    }
 
-        .mapa div button{
-            scale: 0.7;
-        }
+    .mapa div button {
+        scale: 0.7;
+    }
 
-        #btn1{
-            left: 27%;
-            top: 42%;
-        
-        }
-        #btn2{
-            left: 37%;
-            top: 55%;
-        }
-        #btn3{
-            left: 70%;
-            top: 37%;
-        }
-        #btn4{
-            left: 77%;
-            top: 60%;
-        }
+    #btn1 {
+        left: 27%;
+        top: 42%;
+
+    }
+
+    #btn2 {
+        left: 37%;
+        top: 55%;
+    }
+
+    #btn3 {
+        left: 70%;
+        top: 37%;
+    }
+
+    #btn4 {
+        left: 77%;
+        top: 60%;
+    }
+
+    /*                TIENDA                   */
+    .tienda{
+        margin-bottom: 100px;
+    }
+    .tienda div {
+        justify-content: center;
+        grid-template-columns: 286px 286px;
+        grid-template-rows: 375px 375px 375px;
+        grid-template-areas: 
+        "carta1 carta2"
+        "carta3 carta4"
+        "carta5 carta6"
+        ;
+
+    }
+
+    .tienda div div img {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav{
+        display: block;
+        width: auto;
+    }
 }
 
 @media screen and (max-width:770px) {
@@ -272,32 +338,41 @@
         width: auto;
         left: 10%;
     }
-    .hero div div div div p{
+
+    .hero div div div div h5 {
+        scale: 0.8;
+        top: 0%;
+        left: 30%;
+    }
+    .hero div div div div p {
         font-size: 20px;
     }
 
-    .sec3 section div img{
+    .sec3 section div img {
         width: 100px;
         height: 100px;
     }
-    .sec3 section div h3{
+
+    .sec3 section div h3 {
         font-size: 20px;
     }
-    .sec3 section div p{
+
+    .sec3 section div p {
         font-size: 10px;
     }
 
-    .sec3 section .barra input{
+    .sec3 section .barra input {
         width: 65vh;
     }
-    .sec3 section .barra p{
+
+    .sec3 section .barra p {
         font-size: 15px;
     }
 
-    .sec2 {
+    .sec3 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 400px 50px 1200px 400px 50px 1200px;
+        grid-template-rows: 200px 400px 50px 1000px 400px 50px 1000px;
         grid-template-areas:
             "titulo"
             "foto1"
@@ -308,35 +383,106 @@
             "parrafo2"
         ;
     }
-/*               footer            */
-footer p{
-    font-size:medium;
-}
-}
 
-@media screen and (max-width: 500px){
-    .sec3 section .barra input{
-        width: 65vh;
+    .sec3 h2{
+        font-size: 30px;
     }
-
-    .sec2 p{
-        font-size: 25px;
+    .sec3{
+        height: 1000px;
     }
-
-    .sec1Proyecto div div p{
-        font-size: 15px;
+    .sec2{
+        margin-top: 0px;
     }
-    .sec1Proyecto div div h5{
-        font-size: 20px;
-    }
-    .sec1Proyecto div div{
+    .sec2 h2{
         font-size: 35px;
     }
 
-    .mapa h2{
+    /*                 TIRNDA                */
+    .tienda div {
+        justify-content: center;
+        grid-template-columns: 286px;
+        grid-template-rows: 375px 375px 375px 375px 375px 375px;
+        grid-template-areas: 
+        "carta1"
+        "carta2"
+        "carta3"
+        "carta4"
+        "carta5"
+        "carta6"
+        ;
+
+    }
+
+    /*               footer            */
+    footer p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*            INDEX            */
+    .hero div div div div h5 {
+        top: 0%;
+        left: 30%;
+    }
+    .hero div div div div p {
+        font-size: 18px;
+    }
+
+    .sec2{
+        grid-template-rows: 200px 400px 50px 1000px 400px 50px 1000px;
+    }
+    .sec3 section .barra input {
+        width: 65vh;
+    }
+
+    .sec2 p {
+        font-size: 25px;
+    }
+    .sec2 div img{
+        scale: 0.7;
+    }
+
+
+    /*            PROYECTO            */
+
+    .sec1Proyecto div div p {
+        font-size: 15px;
+    }
+
+    .sec1Proyecto h2{
+        font-size: 30px;
+    }
+
+    .sec1Proyecto div div h5 {
         font-size: 20px;
     }
-    .mapa div button{
+
+    .sec1Proyecto div div {
+        font-size: 35px;
+    }
+    .sec1Proyecto div iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    /*            MAPA            */
+
+    .mapa h2 {
+        font-size: 20px;
+    }
+
+    .mapa div button {
         scale: 0.5;
+    }
+
+    /*            CONTACTOS            */
+    .infoUsuario form div input {
+        width: 300px !important;
+    }
+
+    .infoUsuario form div textarea {
+        width: 300px !important;
     }
 }
