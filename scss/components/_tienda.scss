@@ -14,6 +14,8 @@
 .tienda{
     div{
         display: grid;
+        column-gap: 10px;
+        row-gap: 5px;
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: 375px 10px 375px;
         grid-template-areas: 
@@ -21,107 +23,19 @@
         ". . ."
         "carta4 carta5 carta6"
         ;
-        .cardT1{
-            grid-area: carta1;
+        transition: .2s .1s linear;
+        .card{
             display: flex;
             flex-direction: column;
+            &:hover {
+                transform: scale(1.2);
+            }
             img{
                 height: 205px;
             }
             div{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                a{
-                    background-color: nth($colores , 2 ) !important;
-                    border-color: black;
-                }
-            }
-        }
-        .cardT2{
-            grid-area: carta2;
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 205px;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                a{
-                    background-color: nth($colores , 2 ) !important;
-                    border-color: black;
-                }
-            }
-        }
-        .cardT3{
-            grid-area: carta3;
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 205px;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                a{
-                    background-color: nth($colores , 2 ) !important;
-                    border-color: black;
-                }
-            }
-        }
-        .cardT4{
-            grid-area: carta4;
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 205px;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                a{
-                    background-color: nth($colores , 2 ) !important;
-                    border-color: black;
-                }
-            }
-        }
-        .cardT5{
-            grid-area: carta5;
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 205px;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                a{
-                    background-color: nth($colores , 2 ) !important;
-                    border-color: black;
-                }
-            }
-        }
-        .cardT6{
-            grid-area: carta6;
-            display: flex;
-            flex-direction: column;
-            img{
-                height: 205px;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 align-items: center;
                 a{
                     background-color: nth($colores , 2 ) !important;

@@ -20,8 +20,15 @@
         @extend %titulo;
     }
     form{
+        width: fit-content;
         div{
             margin-inline: 20px;
+        }
+        button{
+            background-color: nth($colores , 2 );
+            border-color: black;
+            color: black;
+            margin: 20px 0px 10px 20px;
         }
     }
 }

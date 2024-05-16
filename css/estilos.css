@@ -1,4 +1,3 @@
-/*           VARIABLES                 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +53,29 @@ body {
 .infoUsuario form div .form-control {
   width: 400px; }
 
-.barraTienda h2, .preguntasFrecuentes h2, .infoUsuario h3 {
+/*                   TIENDA                  */
+.cardT1 {
+  grid-area: carta1; }
+
+.cardT2 {
+  grid-area: carta2; }
+
+.cardT3 {
+  grid-area: carta3; }
+
+.cardT4 {
+  grid-area: carta4; }
+
+.cardT5 {
+  grid-area: carta5;
+  row-gap: 0px; }
+
+.cardT6 {
+  grid-area: carta6;
+  row-gap: 0px; }
+
+/*           VARIABLES                 */
+.sec1Proyecto h2, .barraTienda h2, .mapa h2, .preguntasFrecuentes h2, .infoUsuario h3 {
   color: white;
   font-size: 30px;
   font-weight: 400;
@@ -84,10 +105,12 @@ header {
       padding: 5px;
       text-align: center;
       border-style: groove;
-      align-self: center; }
+      align-self: center;
+      transition: .2s .1s linear; }
       header nav div div ul li:hover {
         border: solid white 5px;
-        border-style: groove; }
+        border-style: groove;
+        transform: scale(1.2); }
       header nav div div ul li a {
         text-decoration: none;
         color: black;
@@ -183,7 +206,9 @@ header {
         text-align: center;
         font-size: 15px; }
     .sec3 section .barra {
-      justify-content: center; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .sec3 section .barra p {
         font-weight: 300;
         font-size: 20px;
@@ -304,13 +329,16 @@ header {
         font-weight: 200;
         padding: 0px 20px 0px 20px; }
   .sec1Proyecto h2 {
-    padding-bottom: 30px;
-    background-color: slategray;
     font-size: 50px;
-    font-weight: 600;
-    color: black;
-    text-shadow: 5px 5px 10px #2e2e2e;
-    text-align: center; }
+    text-shadow: 5px 5px 10px black;
+    padding-inline: 20px;
+    /*         padding-bottom: 30px;
+        background-color:rgb(112, 128, 144) ;
+        font-size: 50px;
+        font-weight: 600;
+        color: black;
+        text-shadow: 5px 5px 10px #2e2e2e;
+        text-align: center; */ }
   .sec1Proyecto div {
     width: auto;
     display: flex;
@@ -344,98 +372,30 @@ header {
 
 .tienda div {
   display: grid;
+  column-gap: 10px;
+  row-gap: 5px;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 375px 10px 375px;
-  grid-template-areas: "carta1 carta2 carta3" ". . ." "carta4 carta5 carta6"; }
-  .tienda div .cardT1 {
-    grid-area: carta1;
+  grid-template-areas: "carta1 carta2 carta3" ". . ." "carta4 carta5 carta6";
+  transition: .2s .1s linear; }
+  .tienda div .card {
     display: flex;
     flex-direction: column; }
-    .tienda div .cardT1 img {
+    .tienda div .card:hover {
+      transform: scale(1.2); }
+    .tienda div .card img {
       height: 205px; }
-    .tienda div .cardT1 div {
+    .tienda div .card div {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center; }
-      .tienda div .cardT1 div a {
-        background-color: slategray !important;
-        border-color: black; }
-  .tienda div .cardT2 {
-    grid-area: carta2;
-    display: flex;
-    flex-direction: column; }
-    .tienda div .cardT2 img {
-      height: 205px; }
-    .tienda div .cardT2 div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .tienda div .cardT2 div a {
-        background-color: slategray !important;
-        border-color: black; }
-  .tienda div .cardT3 {
-    grid-area: carta3;
-    display: flex;
-    flex-direction: column; }
-    .tienda div .cardT3 img {
-      height: 205px; }
-    .tienda div .cardT3 div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .tienda div .cardT3 div a {
-        background-color: slategray !important;
-        border-color: black; }
-  .tienda div .cardT4 {
-    grid-area: carta4;
-    display: flex;
-    flex-direction: column; }
-    .tienda div .cardT4 img {
-      height: 205px; }
-    .tienda div .cardT4 div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .tienda div .cardT4 div a {
-        background-color: slategray !important;
-        border-color: black; }
-  .tienda div .cardT5 {
-    grid-area: carta5;
-    display: flex;
-    flex-direction: column; }
-    .tienda div .cardT5 img {
-      height: 205px; }
-    .tienda div .cardT5 div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .tienda div .cardT5 div a {
-        background-color: slategray !important;
-        border-color: black; }
-  .tienda div .cardT6 {
-    grid-area: carta6;
-    display: flex;
-    flex-direction: column; }
-    .tienda div .cardT6 img {
-      height: 205px; }
-    .tienda div .cardT6 div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .tienda div .cardT6 div a {
+      .tienda div .card div a {
         background-color: slategray !important;
         border-color: black; }
 
 .mapa h2 {
-  font-size: 50px;
-  text-align: center;
-  background-color: slategray; }
+  font-size: 40px;
+  text-shadow: 5px 5px 10px black; }
 
 .mapa div {
   transition: button .6 0 linear;
@@ -468,8 +428,15 @@ header {
     color: black;
     border-color: black; }
 
-.infoUsuario form div {
-  margin-inline: 20px; }
+.infoUsuario form {
+  width: fit-content; }
+  .infoUsuario form div {
+    margin-inline: 20px; }
+  .infoUsuario form button {
+    background-color: slategray;
+    border-color: black;
+    color: black;
+    margin: 20px 0px 10px 20px; }
 
 footer {
   background-color: slategray;

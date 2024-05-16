@@ -1,8 +1,8 @@
 .mapa{
     h2{
-        font-size: 50px;
-        text-align: center;
-        background-color: nth($colores, 2);
+        @extend %titulo;
+        font-size: 40px;
+        text-shadow: 5px 5px 10px black;
     }
     div{
         transition: button .6 0 linear;

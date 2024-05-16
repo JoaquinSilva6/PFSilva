@@ -1,6 +1,4 @@
-/*           VARIABLES                 */
 
-$colores: rgb(153, 142, 142), rgb(112, 128, 144), rgb(206, 191, 191), rgb(224, 224, 224);
 
 * {
     box-sizing: border-box;
@@ -71,4 +69,32 @@ body {
 
 .infoUsuario form div .form-control{
     width: 400px;
+}
+
+
+/*                   TIENDA                  */
+.cardT1{
+    grid-area: carta1 ;
+}
+
+.cardT2{
+    grid-area: carta2 ;
+}
+
+.cardT3{
+    grid-area: carta3;
+}
+
+.cardT4{
+    grid-area: carta4;
+}
+
+.cardT5{
+    grid-area: carta5;
+    row-gap: 0px;
+}
+
+.cardT6{
+    grid-area: carta6;
+    row-gap: 0px;
 }
